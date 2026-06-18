@@ -72,13 +72,13 @@ CAR_PRICE_PREDICTOR-MASTER/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/shaik-asif967/Car-Price-Prediction-ML.git
+git clone https://github.com/shaik-asif967/Car-Price-Predictor-Using-Machine-Learning.git
 ```
 
 ### Navigate to Project Folder
 
 ```bash
-cd Car-Price-Prediction-ML
+cd Car-Price-Predictor-Using-Machine-Learning
 ```
 
 ### Install Dependencies
