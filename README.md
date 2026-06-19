@@ -1,140 +1,50 @@
-# 🚗 Car Price Prediction Using Machine Learning
+# Car Price Predictor
 
-## 📌 Overview
+Project link: https://car-price-price.herokuapp.com
+Demo Video: https://youtu.be/HEaFU68WAPM
 
-This project is a Machine Learning-based Car Price Prediction System that predicts the selling price of used cars based on various vehicle attributes such as company, year, fuel type, kilometers driven, and transmission type.
+<img src="https://github.com/rajtilakls2510/car_price_predictor/blob/master/demo.png">
 
-Developed as part of my **InternPe Internship Program**, this project demonstrates the complete Machine Learning workflow from data preprocessing and analysis to model deployment using Flask.
 
----
 
-## 📸 Project Demo
+# Aim
 
-### Car Price Predictor Interface
+This project aims to predict the Price of an used Car by taking it's Company name, it's Model name, Year of Purchase, and other parameters.
 
-![Car Price Predictor](predict.png)
+<img src="https://github.com/rajtilakls2510/car_price_predictor/blob/master/predict.png">
 
-### Prediction Demo
+## How to use?
 
-![Prediction Demo](demo.png)
+1. Clone the repository
+2. Install the required packages in "requirements.txt" file.
 
----
+Some packages are:
+ - numpy 
+ - pandas 
+ - scikit-learn
 
-## 🎯 Features
+3. Run the "application.py" file
+And you are good to go. 
 
-- Predict used car prices using Machine Learning
-- Data Cleaning and Preprocessing
-- Exploratory Data Analysis (EDA)
-- Model Training and Evaluation
-- Flask-based Web Application
-- Real-Time Price Prediction
-- User-Friendly Interface
+# Description
 
----
+## What this project does?
 
-## 🛠️ Technologies Used
+1. This project takes the parameters of an used car like: Company name, Model name, Year of Purchase, Fuel Type and Number of Kilometers it has been driven.
+2. It then predicts the possible price of the car. For example, the image below shows the predicted price of our Hyundai Grand i10. 
 
-- Python
-- Pandas
-- NumPy
-- Scikit-Learn
-- Matplotlib
-- Seaborn
-- Flask
-- Jupyter Notebook
+<img src="https://github.com/rajtilakls2510/car_price_predictor/blob/master/predict.png">
 
----
+## How this project does?
 
-## 📂 Project Structure
+1. First of all the data was scraped from Quikr.com (https://quikr.com) 
+Link for data: https://github.com/rajtilakls2510/car_price_predictor/blob/master/quikr_car.csv
 
-```text
-CAR_PRICE_PREDICTOR-MASTER/
-│
-├── application.py
-├── Cleaned_Car_data.csv
-├── LinearRegressionModel.pkl
-├── Quikr Analysis.ipynb
-├── demo.png
-├── predict.png
-├── requirements.txt
-├── README.md
-│
-├── static/
-│   └── css/
-│       └── style.css
-│
-└── templates/
-    └── index.html
-```
+2. The data was cleaned (it was super unclean :( ) and analysed.
 
-## ⚙️ Installation
+3. Then a Linear Regression model was built on top of it which had 0.92 R2_score.
 
-### Clone Repository
+Link for notebook: https://github.com/rajtilakls2510/car_price_predictor/blob/master/Quikr%20Analysis.ipynb
 
-```bash
-git clone https://github.com/shaik-asif967/Car-Price-Predictor-Using-Machine-Learning.git
-```
+4. This project was given the form of an website built on Flask where we used the Linear Regression model to perform predictions.
 
-### Navigate to Project Folder
-
-```bash
-cd Car-Price-Predictor-Using-Machine-Learning
-```
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Run Application
-
-```bash
-python application.py
-```
-
-Open:
-
-```text
-http://127.0.0.1:5000
-```
-
----
-
-## 📊 Machine Learning Workflow
-
-1. Data Collection
-2. Data Cleaning
-3. Exploratory Data Analysis
-4. Feature Engineering
-5. Model Training
-6. Model Evaluation
-7. Model Deployment using Flask
-
----
-
-## 🎓 Internship Project
-
-This project was completed as part of the **InternPe Internship Program**, providing practical exposure to Machine Learning, Data Science, and Predictive Analytics.
-
----
-
-## 👨‍💻 Author
-
-**Shaik Asif**
-
-🎓 B.Tech (Electronics and Communication Engineering)
-
-🏫 Institute of Aeronautical Engineering, Hyderabad
-
-🔗 LinkedIn: https://www.linkedin.com/in/shaikasif369
-
-🔗 GitHub: https://github.com/shaik-asif967
-
-📧 Email: shaikasif2026@gmail.com
-
----
-
-## ⭐ Support
-
-If you found this project useful, please consider giving it a ⭐ on GitHub.

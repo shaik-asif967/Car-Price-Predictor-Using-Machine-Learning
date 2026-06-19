@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 1. Force the body to fill the viewport and right-align content */
+body.bg-dark {
+    background-image: url('../banner.png') !important; /* Loads your banner image */
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-color: #ffffff !important; /* Seamless match with the image white background */
+    min-height: 100vh;
+    width: 100vw;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important; /* Pushes everything to the right side */
+    padding: 0 !important;
+    overflow-x: hidden;
+}
+
+/* 2. Full screen structural layout wrapper */
+.app-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: flex-end !important; /* Double down on right-side alignment */
+}
+
+/* 3. The prediction form box shifted cleanly into the white canvas area */
+.form-section {
+    width: 100% !important;
+    max-width: 600px !important; /* Perfectly proportioned to not clip the cars */
+    background: rgba(255, 255, 255, 0.95) !important; /* Semi-transparent polished backdrop */
+    padding: 35px !important;
+    border-radius: 14px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+    border: 1px solid #e2e8f0 !important;
+    
+    /* Pushes the form away from the exact screen edge into the sweet spot */
+    margin-right: 8% !important; 
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* 4. Form internal typography styling */
+.header-area {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header-area h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 6px;
+}
+
+.header-area p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* 5. Clean, elegant inputs */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #475569;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.form-control {
+    height: 42px !important;
+    border-radius: 6px !important;
+    border: 1px solid #cbd5e1 !important;
+    font-size: 14px !important;
+}
+
+.form-control:focus {
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15) !important;
+}
+
+/* 6. Clean blue submit button */
+.btn-predict {
+    width: 100%;
+    height: 45px;
+    background-color: #2563eb !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    font-size: 15px;
+    transition: background 0.2s;
+}
+
+.btn-predict:hover {
+    background-color: #1d4ed8 !important;
+}
+
+/* 7. Centered results text */
+.result-area {
+    text-align: center;
+    margin-top: 20px;
+    min-height: 25px;
+}
+
+#prediction {
+    font-size: 19px;
+    font-weight: 700;
+    color: #10b981; /* Sleek emerald green for calculation output */
+}
+
+/* Mobile responsive collapse */
+@media (max-width: 991px) {
+    body.bg-dark {
+        justify-content: center !important;
+        background-image: none !important; /* Turns off image overlay on narrow viewports */
+        background-color: #f8fafc !important; 
+    }
+    .form-section {
+        margin-right: 0 !important;
+        max-width: 500px !important;
+        box-shadow: none !important;
+    }
+}
