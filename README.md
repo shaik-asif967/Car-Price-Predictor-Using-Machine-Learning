@@ -12,7 +12,7 @@ Developed as part of my **InternPe Internship Program**, this project demonstrat
 
 ### Car Price Predictor Interface
 
-![Car Price Predictor](predictor.png)
+![Car Price Predictor](predict.png)
 
 ### Prediction Demo
 
